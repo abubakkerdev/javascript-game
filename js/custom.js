@@ -17,10 +17,12 @@ btn.addEventListener('click', (button) => {
     let inpString         = input.value.match(/[A-z]/g);
     let inpSpecialChar    = input.value.match(/[\W]/g);
     let space             = input.value.match(/[\s]/g);
+    let digit             = input.value.match(/[\d]/g);
+
 
     if (button.target.dataset.val == 'default')
     {
-        if (input.value === '' || space || inpNumber && (inpString === null) && (inpSpecialChar === null))
+        if ((digit !== null) || (inpSpecialChar !== null) || space || input.value === '')
         {
             err.classList.remove('in-active');
             err.innerHTML = 'Error: Give a valid name !';
@@ -72,7 +74,7 @@ btn.addEventListener('click', (button) => {
     }
     else if (button.target.dataset.val == 'playerTwo' && stepCheck[0] == 1 && stepCheck[1] == 2)
     {
-        if (input.value === '' || space || inpNumber && (inpString === null) && (inpSpecialChar === null))
+        if ((digit !== null) || (inpSpecialChar !== null) || space || input.value === '')
         {
             err.classList.remove('in-active');
             err.innerHTML = 'Error: Give a valid name !';
@@ -137,7 +139,7 @@ btn.addEventListener('click', (button) => {
     }
     else if (button.target.dataset.val == 'playerThree' && stepCheck[0] == 1 && stepCheck[1] == 2 && stepCheck[2] == 3 && stepCheck[3] == 4)
     {
-        if (input.value === '' || space || inpNumber && (inpString === null) && (inpSpecialChar === null))
+        if ((digit !== null) || (inpSpecialChar !== null) || space || input.value === '')
         {
             err.classList.remove('in-active');
             err.innerHTML = 'Error: Give a valid name !';
