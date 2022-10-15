@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Md.Abu Bakkar Siddik">
+    <meta name="description" content="This page is built with the basic elements of HTML.">
+    <title>JavaScript Game</title>
+    <link rel="icon" href="images/html.png" type="image/x-icon">
+    <!-- google fonts link start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <!-- google fonts link end -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="images/html.png" sizes="72x72">
+    <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="images/html.png" sizes="114x114">
+    <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="images/html.png" sizes="144x144">
+    <link rel="apple-touch-icon-precomposed" type="image/x-icon" href="images/html.png">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="content" class="heading">Wanna Play game?</h1>
+        <span class="chance in-active" id="chance">Chance - 5</span>
+        <input type="text" id="inputVal" class="input" placeholder="What is your name?">
+        <button type="button" id="defaultBtn" data-val="default" class="button">Start Game</button>
+        <h2 id="error" class="msg in-active"></h2>
+
+        <!-- When the game is end -->
+        <ul id="allplayer" class="in-active"></ul>
+        <a href="" id="goBack" class="button in-active">Go Back</a>
+    </div>
+
+    <script src="./js/custom.js"></script>
+</body>
+
+</html>

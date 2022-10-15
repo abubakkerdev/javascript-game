@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #f5f5f5;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  width: 50%;
+  margin: 80px auto;
+  padding: 50px 0 50px 48px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 4px 4px 6px 0px rgb(0 0 0 / 30%);
+}
+.heading {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.chance {
+  font-weight: 500;
+}
+.msg {
+  color: red;
+}
+
+.input {
+  border: 1px solid #d9d9d9;
+  border-radius: 80px;
+  padding: 25px 50px;
+  width: 80%;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+.input:focus {
+  outline: none;
+}
+.input::placeholder {
+  font-size: 20px;
+  font-weight: 700;
+  color: #d9d9d9;
+  font-family: "Montserrat", sans-serif;
+}
+.button {
+  background: #7041d3;
+  border: 1px solid #7041d3;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 15px 50px;
+  border-radius: 80px;
+}
+ul {
+  list-style: none;
+}
+#goBack {
+  text-decoration: none;
+}
+.win {
+  text-transform: uppercase;
+  color: green;
+}
+.loser {
+  text-transform: uppercase;
+  color: red;
+}
+.in-active {
+  display: none;
+}
